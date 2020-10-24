@@ -1,0 +1,17 @@
+{
+    "name": "jsv1280/jairo-php-framework",
+    "description": "Framework MVC from scratch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jairo Salazar",
+            "email": "jairosalazar1280@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "jairo\\":"./"
+        }
+    },
+    "require": {}
+}
