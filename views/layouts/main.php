@@ -26,7 +26,6 @@
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>
             </ul>
-            </form>
         </div>
     </nav>
     <div class="container">

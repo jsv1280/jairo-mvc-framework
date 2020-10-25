@@ -2,9 +2,10 @@
 
 namespace jairo\controllers;
 
-use jairo\core\JairoFramework;
+use jairo\core\Controller;
+use jairo\core\Request;
 
-class SiteController{
+class SiteController extends Controller {
 
     public function home(){
 
@@ -12,15 +13,15 @@ class SiteController{
             "name" => "Jairo"
         ];
 
-        return JairoFramework::$jairo->router->renderView('home',$params);
+        return $this->render('home',$params);
     }
 
     public function contact(){
-        return JairoFramework::$jairo->router->renderView('contact');
+        return $this->render('contact');
     }
 
-    public function handleContact(){
-        return 'Handling submiting data';
+    public function handleContact(Request $request){
+        $body = $request->getBody();
     }
 }
 
